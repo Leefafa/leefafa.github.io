@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  <title>欢迎使用Markdown编辑器写博客 | 千年一叹 | fafa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="theme-color" content="#3F51B5">
+  
+  
+  <meta name="keywords" content="">
+  <meta name="description" content="欢迎使用Markdown编辑器写博客本Markdown编辑器使用StackEdit修改而来，用它写博客，将会带来全新的体验哦：
+
+Markdown和扩展Markdown简洁的语法
+代码块高亮
+图片链接和图片上传
+LaTex数学公式
+UML序列图和流程图
+离线写博客
+导入导出Markdown文件
+丰富的快捷键
+
+
+快捷键
+加粗    Ctrl + B 
+斜体    Ctrl + I 
+引用    C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="欢迎使用Markdown编辑器写博客">
+<meta property="og:url" content="https://leefafa.github.io/2016/11/27/markdown/index.html">
+<meta property="og:site_name" content="千年一叹">
+<meta property="og:description" content="欢迎使用Markdown编辑器写博客本Markdown编辑器使用StackEdit修改而来，用它写博客，将会带来全新的体验哦：
+
+Markdown和扩展Markdown简洁的语法
+代码块高亮
+图片链接和图片上传
+LaTex数学公式
+UML序列图和流程图
+离线写博客
+导入导出Markdown文件
+丰富的快捷键
+
+
+快捷键
+加粗    Ctrl + B 
+斜体    Ctrl + I 
+引用    C">
+<meta property="og:updated_time" content="2016-11-27T10:35:43.770Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="欢迎使用Markdown编辑器写博客">
+<meta name="twitter:description" content="欢迎使用Markdown编辑器写博客本Markdown编辑器使用StackEdit修改而来，用它写博客，将会带来全新的体验哦：
+
+Markdown和扩展Markdown简洁的语法
+代码块高亮
+图片链接和图片上传
+LaTex数学公式
+UML序列图和流程图
+离线写博客
+导入导出Markdown文件
+丰富的快捷键
+
+
+快捷键
+加粗    Ctrl + B 
+斜体    Ctrl + I 
+引用    C">
+  
+    <link rel="alternative" href="/atom.xml" title="千年一叹" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css?v=1.3">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">fafa</h5>
+          <a href="mailto:zwfcode@qq.com" title="zwfcode@qq.com" class="mail">zwfcode@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/leefafa" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/u/3313872443?is_all=1" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://mysustcollege.tk"  >
+                <i class="icon icon-lg icon-link"></i>
+                mysustcollege.tk
+              </a>
+            </li>
+        
+      </ul>
+
+      <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>千年一叹 &copy; 2006 - 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+    </div>
+  </div>
+</aside>
+
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">欢迎使用Markdown编辑器写博客</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">欢迎使用Markdown编辑器写博客</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2016-11-27T10:35:12.093Z" itemprop="datePublished" class="page-time">
+  2016-11-27
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#欢迎使用Markdown编辑器写博客"><span class="post-toc-number">1.</span> <span class="post-toc-text">欢迎使用Markdown编辑器写博客</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#快捷键"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">快捷键</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Markdown及扩展"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Markdown及扩展</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#表格"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">表格</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#代码块"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">代码块</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#目录"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">目录</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数学公式"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">数学公式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#UML-图"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">UML 图:</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#离线写博客"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">离线写博客</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-markdown"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">欢迎使用Markdown编辑器写博客</h1>
+        <div class="post-meta">
+            <time datetime="2016-11-27T10:35:12.093Z" itemprop="datePublished" class="post-time">
+  2016-11-27
+</time>
+
+            
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="欢迎使用Markdown编辑器写博客"><a href="#欢迎使用Markdown编辑器写博客" class="headerlink" title="欢迎使用Markdown编辑器写博客"></a>欢迎使用Markdown编辑器写博客</h1><p>本Markdown编辑器使用<a href="https://github.com/benweet/stackedit" target="_blank" rel="external">StackEdit</a>修改而来，用它写博客，将会带来全新的体验哦：</p>
+<ul>
+<li><strong>Markdown和扩展Markdown简洁的语法</strong></li>
+<li><strong>代码块高亮</strong></li>
+<li><strong>图片链接和图片上传</strong></li>
+<li><strong><em>LaTex</em>数学公式</strong></li>
+<li><strong>UML序列图和流程图</strong></li>
+<li><strong>离线写博客</strong></li>
+<li><strong>导入导出Markdown文件</strong></li>
+<li><strong>丰富的快捷键</strong></li>
+</ul>
+<hr>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul>
+<li>加粗    <code>Ctrl + B</code> </li>
+<li>斜体    <code>Ctrl + I</code> </li>
+<li>引用    <code>Ctrl + Q</code></li>
+<li>插入链接    <code>Ctrl + L</code></li>
+<li>插入代码    <code>Ctrl + K</code></li>
+<li>插入图片    <code>Ctrl + G</code></li>
+<li>提升标题    <code>Ctrl + H</code></li>
+<li>有序列表    <code>Ctrl + O</code></li>
+<li>无序列表    <code>Ctrl + U</code></li>
+<li>横线    <code>Ctrl + R</code></li>
+<li>撤销    <code>Ctrl + Z</code></li>
+<li>重做    <code>Ctrl + Y</code></li>
+</ul>
+<h2 id="Markdown及扩展"><a href="#Markdown及扩展" class="headerlink" title="Markdown及扩展"></a>Markdown及扩展</h2><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank"> [ 维基百科 ]</a></p>
+</blockquote>
+<p>使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.csdn.net" target="_blank" rel="external">链接</a>等，详细语法参考帮助？。</p>
+<p>本编辑器支持 <strong>Markdown Extra</strong> , 　扩展了很多好用的功能。具体请参考<a href="https://github.com/jmcmanus/pagedown-extra" title="Pagedown Extra" target="_blank" rel="external">Github</a>.  </p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><strong>Markdown　Extra</strong>　表格语法：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>$1</td>
+</tr>
+</tbody>
+</table>
+<p>可以使用冒号来定义对齐方式：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">1600 元</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">12 元</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">1 元</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<p>###定义列表</p>
+<p><strong>Markdown　Extra</strong>　定义列表语法：<br>项目１<br>项目２<br>:   定义 A<br>:   定义 B</p>
+<p>项目３<br>:   定义 C</p>
+<p>:   定义 D</p>
+<pre><code>&gt; 定义D内容
+</code></pre><h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码块语法遵循标准markdown代码，例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></div><div class="line">    <span class="string">'''A docstring'''</span></div><div class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></div><div class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></div><div class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></div><div class="line"><span class="meta">... </span>prompt'''</div></pre></td></tr></table></figure></p>
+<p>###脚注<br>生成一个脚注[^footnote].<br>  [^footnote]: 这里是 <strong>脚注</strong> 的 <em>内容</em>.</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>用 <code>[TOC]</code>来生成目录：</p>
+<p>[TOC]</p>
+<h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><p>使用MathJax渲染<em>LaTex</em> 数学公式，详见<a href="http://math.stackexchange.com/" target="_blank" rel="external">math.stackexchange.com</a>.</p>
+<ul>
+<li>行内公式，数学公式为：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。</li>
+<li>块级公式：</li>
+</ul>
+<p>$$    x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<p>更多LaTex语法请参考 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="external">这儿</a>.</p>
+<h3 id="UML-图"><a href="#UML-图" class="headerlink" title="UML 图:"></a>UML 图:</h3><p>可以渲染序列图：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">张三-&gt;李四: 嘿，小四儿, 写博客了没?</div><div class="line">Note right of 李四: 李四愣了一下，说：</div><div class="line">李四--&gt;张三: 忙得吐血，哪有时间写。</div></pre></td></tr></table></figure>
+<p>或者流程图：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">st=&gt;start: 开始</div><div class="line">e=&gt;end: 结束</div><div class="line">op=&gt;operation: 我的操作</div><div class="line">cond=&gt;condition: 确认？</div><div class="line"></div><div class="line">st-&gt;op-&gt;cond</div><div class="line">cond(yes)-&gt;e</div><div class="line">cond(no)-&gt;op</div></pre></td></tr></table></figure>
+<ul>
+<li>关于 <strong>序列图</strong> 语法，参考 <a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="external">这儿</a>,</li>
+<li>关于 <strong>流程图</strong> 语法，参考 <a href="http://adrai.github.io/flowchart.js/" target="_blank" rel="external">这儿</a>.</li>
+</ul>
+<h2 id="离线写博客"><a href="#离线写博客" class="headerlink" title="离线写博客"></a>离线写博客</h2><p>即使用户在没有网络的情况下，也可以通过本编辑器离线写博客（直接在曾经使用过的浏览器中输入<a href="http://write.blog.csdn.net/mdeditor" target="_blank" rel="external">write.blog.csdn.net/mdeditor</a>即可。<strong>Markdown编辑器</strong>使用浏览器离线存储将内容保存在本地。</p>
+<p>用户写博客的过程中，内容实时保存在浏览器缓存中，在用户关闭浏览器或者其它异常情况下，内容不会丢失。用户再次打开浏览器时，会显示上次用户正在编辑的没有发表的内容。</p>
+<p>博客发表后，本地缓存将被删除。　</p>
+<p>用户可以选择 <i class="icon-disk"></i> 把正在写的博客保存到服务器草稿箱，即使换浏览器或者清除缓存，内容也不会丢失。</p>
+<blockquote>
+<p><strong>注意：</strong>虽然浏览器存储大部分时候都比较可靠，但为了您的数据安全，在联网后，<strong>请务必及时发表或者保存到服务器草稿箱</strong>。</p>
+</blockquote>
+<p>##浏览器兼容</p>
+<ol>
+<li>目前，本编辑器对Chrome浏览器支持最为完整。建议大家使用较新版本的Chrome。</li>
+<li>IE９以下不支持</li>
+<li>IE９，１０，１１存在以下问题<ol>
+<li>不支持离线功能</li>
+<li>IE9不支持文件导入导出</li>
+<li>IE10不支持拖拽文件导入</li>
+</ol>
+</li>
+</ol>
+<hr>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        这里写留言或版权声明：<a href="/2016/11/27/markdown/" target="_blank" rel="external">https://leefafa.github.io/2016/11/27/markdown/</a>
+    </div>
+    <footer>
+        <a href="https://leefafa.github.io">
+            <img src="/img/avatar.jpg" alt="fafa">
+            fafa
+        </a>
+    </footer>
+</blockquote>
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://leefafa.github.io/2016/11/27/markdown/&title=《欢迎使用Markdown编辑器写博客》 — 千年一叹&pic=https://leefafa.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://leefafa.github.io/2016/11/27/markdown/&title=《欢迎使用Markdown编辑器写博客》 — 千年一叹&source=fafa" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://leefafa.github.io/2016/11/27/markdown/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《欢迎使用Markdown编辑器写博客》 — 千年一叹&url=https://leefafa.github.io/2016/11/27/markdown/&via=https://leefafa.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://leefafa.github.io/2016/11/27/markdown/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2016/11/27/hello-world/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+<div class="duoshuo" id="comments">
+	<div class="ds-thread" data-thread-key="markdown" data-title="欢迎使用Markdown编辑器写博客" data-url="https://leefafa.github.io/2016/11/27/markdown/"></div>
+</div>
+<script src="/js/embed.min.js?v=1.3"></script>
+<script src="//cdn.bootcss.com/marked/0.3.6/marked.min.js" async="async"></script>
+<script>
+var duoshuoQuery = {short_name:'leefafa', theme: 'none'}
+</script>
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+  </main>
+  <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true }</script>
+
+
+
+<div class="global-share" id="globalShare">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://leefafa.github.io/2016/11/27/markdown/&title=《欢迎使用Markdown编辑器写博客》 — 千年一叹&pic=https://leefafa.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://leefafa.github.io/2016/11/27/markdown/&title=《欢迎使用Markdown编辑器写博客》 — 千年一叹&source=fafa" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://leefafa.github.io/2016/11/27/markdown/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《欢迎使用Markdown编辑器写博客》 — 千年一叹&url=https://leefafa.github.io/2016/11/27/markdown/&via=https://leefafa.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://leefafa.github.io/2016/11/27/markdown/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="http://s.jiathis.com/qrcode.php?url=https://leefafa.github.io/2016/11/27/markdown/" alt="微信分享二维码">
+</div>
+
+
+
+
+  <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script src="/js/main.min.js?v=1.3"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.3"></script>
+
+
+
+
+
+<script src="//s95.cnzz.com/z_stat.php?id=1260882200&web_id=1260882200"></script>
+
+
+
+
+
+</body>
+</html>
